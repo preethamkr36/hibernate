@@ -1,0 +1,21 @@
+package com.xworkz.operatons;
+
+import java.util.Scanner;
+
+public class Tester {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		int num=scanner.nextInt();
+		int d=num;
+		int r;
+		int l=0;
+		while(d!=0) {
+			r=d%10;
+			if(r>l) {
+				l=r;
+			}
+			d=num/10;
+		}
+		System.out.println(l);
+	}
+}

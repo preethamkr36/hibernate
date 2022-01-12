@@ -1,0 +1,5 @@
+package com.xworkz.mobile_recharge.dto;
+
+public class MobileRechargeDTO {
+
+}

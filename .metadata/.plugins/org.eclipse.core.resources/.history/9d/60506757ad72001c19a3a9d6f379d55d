@@ -1,0 +1,5 @@
+package com.xworkz.mobile_recharge.enum;
+
+public enum ServicesProvider {
+	VI,AIRTEL,JIO,BSNL
+}

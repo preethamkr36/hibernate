@@ -1,0 +1,5 @@
+package com.xworkz.wallet.dao;
+
+public class WalletDAOImpl implements WalletDAO{
+
+}

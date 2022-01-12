@@ -1,0 +1,62 @@
+package com.xworkz.mobile_recharge.dto;
+
+import com.xworkz.mobile_recharge.enums.ServicesProvider;
+import com.xworkz.mobile_recharge.enums.Type;
+
+public class MobileRechargeDTO {
+	private Integer id;
+	private ServicesProvider serviceProvider;
+	private Type type;
+	private Integer plan;
+	private Long number;
+
+	public MobileRechargeDTO(Integer id, ServicesProvider serviceProvider, Type type, Integer plan, Long number) {
+		super();
+		this.id = id;
+		this.serviceProvider = serviceProvider;
+		this.type = type;
+		this.plan = plan;
+		this.number = number;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public ServicesProvider getServiceProvider() {
+		return serviceProvider;
+	}
+
+	public void setServiceProvider(ServicesProvider serviceProvider) {
+		this.serviceProvider = serviceProvider;
+	}
+
+	public Type getType() {
+		return type;
+	}
+
+	public void setType(Type type) {
+		this.type = type;
+	}
+
+	public Integer getPlan() {
+		return plan;
+	}
+
+	public void setPlan(Integer plan) {
+		this.plan = plan;
+	}
+
+	public Long getNumber() {
+		return number;
+	}
+
+	public void setNumber(Long number) {
+		this.number = number;
+	}
+
+}

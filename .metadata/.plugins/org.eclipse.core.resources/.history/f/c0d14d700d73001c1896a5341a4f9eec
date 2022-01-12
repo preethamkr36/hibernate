@@ -1,0 +1,41 @@
+package com.xworkz.wallet.dao;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.xworkz.wallet.dto.WalletDTO;
+
+public class WalletDAOImpl implements WalletDAO {
+
+	@Override
+	public boolean createWallet(WalletDTO dto) {
+		if (dto != null) {
+			Configuration configuration = new Configuration();
+			configuration.configure("resorces/hibernate.cfg.xml");
+			configuration.addAnnotatedClass(WalletDTO.class);
+			SessionFactory factory = configuration.buildSessionFactory();
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	@Override
+	public boolean getWalletByUpi(String upi) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deleteById(int id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean updateAmountByName(Integer amount, String name) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

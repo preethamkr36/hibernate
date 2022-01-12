@@ -1,0 +1,5 @@
+package com.xworkz.wallet.dto;
+
+public class WattelDTO {
+
+}

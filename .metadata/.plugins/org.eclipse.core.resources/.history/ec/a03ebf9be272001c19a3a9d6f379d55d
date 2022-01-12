@@ -1,0 +1,15 @@
+package com.xworkz.mobile_recharge;
+
+import com.xworkz.mobile_recharge.dao.MobileRechargeDAO;
+import com.xworkz.mobile_recharge.dao.MobileRechargeDAOImpl;
+import com.xworkz.mobile_recharge.dto.MobileRechargeDTO;
+import com.xworkz.mobile_recharge.enums.ServicesProvider;
+import com.xworkz.mobile_recharge.enums.Type;
+
+public class Trigger {
+	public static void main(String[] args) {
+		MobileRechargeDTO dto=new MobileRechargeDTO(1, ServicesProvider.JIO, Type.POSTPAID, 555, 8217566973L);
+		MobileRechargeDAO dao=new MobileRechargeDAOImpl();
+		dao.createMobileRecharge(dto);
+	}
+}

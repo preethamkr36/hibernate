@@ -1,0 +1,31 @@
+package com.xworkz.app.island.dao;
+
+import org.hibernate.*;
+import org.hibernate.cfg.Configuration;
+
+import com.xworkz.app.island.dto.IsLandDTO;
+
+public class IsLandDAOImpl implements IsLandDAO {
+
+	@Override
+	public boolean createIsLand(IsLandDTO dto) {
+		if (dto != null) {
+			Configuration configuration = new Configuration();
+			configuration.configure();
+			configuration.addAnnotatedClass(IsLandDTO.class);
+			SessionFactory factory = configuration.buildSessionFactory();
+			Session session = factory.openSession();
+			Transaction transaction = session.beginTransaction();
+			session.save(dto);
+			transaction.commit();
+			session.close();
+			
+			factory.close();
+			return true;
+		} else {
+			return false;
+		}
+
+	}
+
+}

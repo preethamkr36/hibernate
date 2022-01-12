@@ -1,0 +1,9 @@
+package com.xworkz.mobile_recharge;
+
+import com.xworkz.mobile_recharge.dto.MobileRechargeDTO;
+import com.xworkz.mobile_recharge.enums.ServicesProvider;
+import com.xworkz.mobile_recharge.enums.Type;
+
+public class Trigger {
+	MobileRechargeDTO dto=new MobileRechargeDTO(1, ServicesProvider.JIO, Type.POSTPAID, , null)
+}

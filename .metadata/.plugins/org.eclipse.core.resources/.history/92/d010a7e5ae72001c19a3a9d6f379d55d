@@ -1,0 +1,9 @@
+package com.xworkz.mobile_recharge.dto;
+
+public class MobileRechargeDTO {
+	private Integer id;
+	private enum serviceProvider{MALE,FEMALE};
+	private enum type{PREPAID,POSTPAID}
+	private Integer plan;
+	private Long number;
+}

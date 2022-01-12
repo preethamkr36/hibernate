@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;mobile_recharge/src/main/java/com/xworkz/mobile_recharge/enum&apos; to &apos;enums&apos;" description="Rename resource &apos;enum&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/xworkz/mobile_recharge/enum" name="enums" stamp="1641884931945" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;mobile_recharge/src/main/java/resoucres&apos; to &apos;resources&apos;" description="Rename resource &apos;resoucres&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/resoucres" name="resources" stamp="1641903551088" updateReferences="true"/>
+</session>
