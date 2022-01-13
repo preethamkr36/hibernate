@@ -1,0 +1,15 @@
+package com.xworkz.app.island.dao;
+
+import java.util.Collection;
+
+import com.xworkz.app.island.dto.IsLandDTO;
+
+public interface IsLandDAO {
+	public boolean createIsLand(IsLandDTO dto);
+	public boolean deleteIslandById(int id);
+	public IsLandDTO getIslandById(int id);
+	public void updateLocationById(int id,String location);
+	public String getIsLandCountryById(int id);
+	public String getislandNameByCountry(int id,String country);
+	public Collection<IsLandDTO> getAllIsLand();
+}

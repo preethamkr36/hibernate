@@ -21,7 +21,14 @@ public class Trigger {
 //		System.out.println(dao.getMobileRechargeInfo(1));
 //		System.out.println(dao.deleteMobileRechargeById(4));
 		
-		dao.updateServiceProviderById(1, ServicesProvider.VI);
+//		dao.updateServiceProviderById(1, ServicesProvider.VI);
 		
+//		System.out.println(dao.getServiceProvideByType(1, Type.POSTPAID));
+//		System.out.println(dao.getPlanByServiceProvider(3, ServicesProvider.VI));
+//		System.out.println(dao.getNumberById(1));
+//		dao.updatePlanById(1, 650);
+		dao.updatePlanByServiceProvider(2, ServicesProvider.AIRTEL, 550);
+		System.out.println(dao.deleteByServiceProvider(1, ServicesProvider.BSNL));
+		System.out.println(dao.deleteByType(2, Type.PREPAID));
 	}
 }
